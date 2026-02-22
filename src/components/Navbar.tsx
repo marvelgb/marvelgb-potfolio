@@ -3,14 +3,14 @@ import { useState } from "react";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
- const scrollToSection = (id: string) => {
-  const element = document.getElementById(id);
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
 
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-};
-    setMenuOpen(false); 
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+
+    setMenuOpen(false);
   };
 
   return (
